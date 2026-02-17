@@ -2,7 +2,41 @@
 
 <head>
   <style>
+    :root {
+      --baby-pink: hsl(350 60% 75%);
+      --red: hsl(0 85% 55%);
+      --brown: brown;
+      --light-pink: hsl(350 60% 80%);
+       --cyan: hsl(187deg 87% 49% / 82%);
+      --green: #84f403e3;
+
+      --soft-magic: linear-gradient(.25turn, var(--light-pink)10%, var(--cyan)30%, var(--green)50%,
+          var(--cyan)80%, var(--light-pink));
+      --rose-ribbion: linear-gradient(40deg in hsl shorter hue,
+          var(--baby-pink) 10%,
+          var(--red) 20%,
+          var(--brown) 40%,
+          var(--light-pink) 50%,
+          var(--red) 70%,
+          var(--brown) 80%,
+          var(--light-pink) 90%);
+    }
+
+    body {
+      background-color: hsl(15, 91%, 91%);
+      color: hsl(15, 38%, 55%);
+    }
+
     main {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      gap: 50px;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+
+    section {
       display: flex;
       width: 100vw;
       height: 100vh;
@@ -14,14 +48,46 @@
       width: 200px;
       height: 300px;
       /* border: 1px solid black; */
-      box-shadow: 3px 3px 0px 2px;
+      box-shadow: 0px 0px 4px 0px #444;
       border-radius: 3px;
     }
 
     h1 {
       font-size: 28px;
-      color: #444;
+      color: hsl(14, 48%, 44%);
       text-align: center;
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    #card1 {
+      background: linear-gradient(yellow, red, yellow, red);
+    }
+
+    #card2 {
+      background: var(--rose-ribbion);
+    }
+
+    #card3 {
+      background: linear-gradient(blue 10%, hsla(0, 81%, 46%, 0.3));
+    }
+
+    #card4 {
+      background: linear-gradient(45deg, #8B008B 10%, magenta 30%, hotpink 50%, lightpink 70%, pink 90%, peachpuff);
+    }
+
+    #card5{
+      background: var(--soft-magic);
+    }
+
+    p {
+      margin-left: 10px;
+      width: 90%;
+      height: 200px;
     }
   </style>
 </head>
@@ -29,9 +95,40 @@
 <body>
   <h1>Linear Gradient</h1>
   <main>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
+
+    <section>
+
+      <div class="card">
+        <h3>Radiant Sun</h3>
+        <p id="card1"></p>
+      </div>
+
+      <div class="card">
+        <h3>Rose Ribbon</h3>
+        <p id="card2"></p>
+      </div>
+
+      <div class="card">
+        <h3>Peach Blue</h3>
+        <p id="card3"></p>
+      </div>
+
+    </section>
+
+    <section>
+
+      <div class="card">
+        <h3>Pink Glow</h3>
+        <p id="card4"></p>
+      </div>
+
+      <div class="card">
+        <h3>Soft Magic</h3>
+        <p id="card5"></p>
+      </div>
+
+    </section>
+
   </main>
 </body>
 
