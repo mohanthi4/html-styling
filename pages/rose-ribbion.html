@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../index.css">
+  <style>
+    /* gradient colors */
+    :root {
+      --baby-pink: hsl(350 60% 75%);
+      --red: hsl(0 85% 55%);
+      --brown: brown;
+      --light-pink: hsl(350 60% 80%);
+      --rose-ribbion: linear-gradient(40deg in hsl shorter hue,
+          var(--baby-pink) 10%,
+          var(--red) 20%,
+          var(--brown) 40%,
+          var(--light-pink) 50%,
+          var(--red) 70%,
+          var(--brown) 80%,
+          var(--light-pink) 90%);
+    }
+
+    .background {
+      background: linear-gradient(40deg in hsl shorter hue,
+          var(--baby-pink) 10%,
+          var(--red) 20%,
+          var(--brown) 40%,
+          var(--light-pink) 50%,
+          var(--red) 70%,
+          var(--brown) 80%,
+          var(--light-pink) 90%);
+    }
+
+    #color {
+      color: #efe4e5;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <section id="sidebar">
+      <h1>Linear Gradients </h1>
+      <nav>
+        <a href="radiant-sun.html" class="link">Radiant Sun</a>
+        <a href="rose-ribbion.html" class="link background" id="color">Rose Ribbion</a>
+        <a href="peach-blue.html" class="link">Peach Blue</a>
+        <a href="pink-glow.html" class="link">Pink Glow</a>
+        <a href="soft-magic.html" class="link">Soft Magic</a>
+        <a href="gradient.html" class="link">Gradient</a>
+         <a href="orange-check.html" class="link">Orange Check</a>
+      </nav>
+    </section>
+
+    <section class="canvas background"></section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../index.css">
+  <style>
+    :root {
+      --orange: #f76b14e3;
+      --light-pink: hsl(334, 98%, 67%);
+    }
+
+    .background {
+      background-color: var(--orange);
+      background-image: repeating-linear-gradient(0deg, hsla(33, 100%, 75%, 0.6) 0px 10px, transparent 10px 20px),
+        repeating-linear-gradient(90deg, transparent 0px 10px, hsla(33, 100%, 75%, 0.6)10px 20px);
+    }
+
+    #color {
+      color: #3353f5;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <section id="sidebar">
+      <h1>Linear Gradients </h1>
+      <nav>
+        <a href="radiant-sun.html" class="link">Radiant Sun</a>
+        <a href="rose-ribbion.html" class="link">Rose Ribbion</a>
+        <a href="peach-blue.html" class="link">Peach Blue</a>
+        <a href="pink-glow.html" class="link">Pink Glow</a>
+        <a href="soft-magic.html" class="link">Soft Magic</a>
+        <a href="gradient.html" class="link">Gradient</a>
+        <a href="/orange-check.html" class="link background" id="color">Orange Check</a>
+      </nav>
+    </section>
+
+    <section class="canvas background"></section>
+  </main>
+</body>
+
+</html>
