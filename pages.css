@@ -41,6 +41,15 @@
 
 #orange-check:target {
   background-color: var(--orange);
-      background-image: repeating-linear-gradient(0deg, hsla(33, 100%, 75%, 0.6) 0px 10px, transparent 10px 20px),
+  background-image: repeating-linear-gradient(0deg, hsla(33, 100%, 75%, 0.6) 0px 10px, transparent 10px 20px),
         repeating-linear-gradient(90deg, transparent 0px 10px, hsla(33, 100%, 75%, 0.6)10px 20px); ;
 }
+
+#blossom:target{
+  background-image: radial-gradient(at 20% 30%, var(--light-pink), transparent),
+        radial-gradient(at 40% 70%, Moccasin);
+}
+
+#finger-print:target{
+  background-image:  repeating-radial-gradient(MintCream 10px, Moccasin 5px, #ffa07a 20px);;
+} 
