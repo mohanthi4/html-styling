@@ -1,0 +1,46 @@
+:root {
+  --baby-pink: hsl(350 60% 75%);
+  --red: hsl(0 85% 55%);
+  --brown: brown;
+  --light-pink: hsl(350 60% 80%);
+  --pink: #faaad2e3;
+  --purple: hsl(249, 89%, 63%);
+  --green: #73fbd5e3;
+  --dark-pink: hsl(334, 98%, 67%);
+   --orange: #f76b14e3;
+}
+
+#sun:target {
+   background-image: linear-gradient(190deg in hsl shorter hue, yellow, sandybrown);
+ }
+
+#rose:target {
+   background-image: repeating-linear-gradient(40deg in hsl shorter hue,
+       var(--baby-pink) 10%,
+       var(--red) 20%,
+       var(--brown) 40%,
+       var(--light-pink)50%);
+
+ }
+
+#peach-blue:target {
+  background-image: linear-gradient(blue 10%, hsla(0, 81%, 46%, 0.3)); ;
+}
+
+#pink-glow:target {
+  background-image: linear-gradient(45deg, #8B008B 10%, magenta 30%, hotpink 50%, lightpink 70%, pink 90%, peachpuff);;
+}
+
+#soft-magic:target {
+  background-image: linear-gradient(.45turn, var(--purple), var(--pink));;
+}
+
+#gradient:target {
+  background-image: repeating-linear-gradient(var(--green)5%, var(--dark-pink)10%);;
+}
+
+#orange-check:target {
+  background-color: var(--orange);
+      background-image: repeating-linear-gradient(0deg, hsla(33, 100%, 75%, 0.6) 0px 10px, transparent 10px 20px),
+        repeating-linear-gradient(90deg, transparent 0px 10px, hsla(33, 100%, 75%, 0.6)10px 20px); ;
+}
